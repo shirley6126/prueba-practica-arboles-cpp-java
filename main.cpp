@@ -242,14 +242,14 @@ public:
     }
 
     void recorridoPreorden() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\n El arbol esta vacio." << endl; return; }
         cout << "\n===== RECORRIDO PREORDEN (raiz - izq - der) =====" << endl;
         cout << "  Resultado: empieza desde la raiz" << endl;
         preorden(raiz);
     }
 
     void recorridoPostorden() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\n El arbol esta vacio." << endl; return; }
         cout << "\n===== RECORRIDO POSTORDEN (izq - der - raiz) =====" << endl;
         cout << "  Resultado: la raiz sale al final" << endl;
         postorden(raiz);
@@ -257,7 +257,7 @@ public:
 
     // BFS: uso una cola (queue) para ir procesando nodo por nodo en cada nivel
     void recorridoPorNiveles() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\nEl arbol esta vacio." << endl; return; }
         cout << "\n===== RECORRIDO POR NIVELES - BFS =====" << endl;
 
         queue<Nodo*> cola;  // la cola guarda los nodos pendientes de visitar
@@ -293,7 +293,7 @@ public:
     }
 
     void buscarNotaMayor() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\n El arbol esta vacio." << endl; return; }
         Nodo* mayor = nullptr;
         buscarNotaMayor(raiz, mayor);
         cout << "\n  Estudiante con la nota MAS ALTA:" << endl;
@@ -301,7 +301,7 @@ public:
     }
 
     void buscarNotaMenor() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\nEl arbol esta vacio." << endl; return; }
         Nodo* menor = nullptr;
         buscarNotaMenor(raiz, menor);
         cout << "\n  Estudiante con la nota MAS BAJA:" << endl;
@@ -309,13 +309,13 @@ public:
     }
 
     void mostrarAprobados() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\n El arbol esta vacio." << endl; return; }
         cout << "\n===== ESTUDIANTES APROBADOS (nota >= 7) =====" << endl;
         mostrarAprobados(raiz);
     }
 
     void mostrarReprobados() {
-        if (raiz == nullptr) { cout << "\n[!] El arbol esta vacio." << endl; return; }
+        if (raiz == nullptr) { cout << "\n El arbol esta vacio." << endl; return; }
         cout << "\n===== ESTUDIANTES REPROBADOS (nota < 7) =====" << endl;
         mostrarReprobados(raiz);
     }
@@ -366,7 +366,7 @@ Estudiante pedirDatosEstudiante() {
 
     // Validación simple: la cédula debe tener 10 caracteres
     while (e.cedula.length() != 10) {
-        cout << "  [!] Cedula invalida. Ingrese nuevamente: ";
+        cout << "  Cedula invalida. Ingrese nuevamente: ";
         cin >> e.cedula;
         limpiarBuffer();
     }
@@ -383,7 +383,7 @@ Estudiante pedirDatosEstudiante() {
 
     // Validación de nota entre 0 y 10
     while (e.notaFinal < 0 || e.notaFinal > 10) {
-        cout << "  [!] Nota invalida. Ingrese entre 0 y 10: ";
+        cout << "  Nota invalida. Ingrese entre 0 y 10: ";
         cin >> e.notaFinal;
         limpiarBuffer();
     }
@@ -402,19 +402,13 @@ int main() {
     ArbolBST arbol;  // creo el árbol vacío
 
     // datos de ejemplo 
-    Estudiante e1 = {"1804500001", "Perez Lopez",    "Carlos Andres", 8.5f, "Sistemas",    "Tercer Semestre"};
+    Estudiante e1 = {"1804500001", "Amaguaña Villacres",    "Shirley Dayana", 8.5f, "Sistemas",    "Tercer Semestre"};
     Estudiante e2 = {"1804500003", "Garcia Torres",  "Maria Jose",    6.0f, "Industrial",  "Quinto Semestre"};
-    Estudiante e3 = {"1804500002", "Moreta Salinas", "Juan Pablo",    9.2f, "Electronica", "Primer Semestre"};
-    Estudiante e4 = {"1804500005", "Llerena Vega",   "Ana Lucia",     5.5f, "Sistemas",    "Tercer Semestre"};
-    Estudiante e5 = {"1804500004", "Barona Freire",  "Luis Miguel",   7.8f, "Industrial",  "Septimo Semestre"};
 
     arbol.insertarEstudiante(e1);
     arbol.insertarEstudiante(e2);
-    arbol.insertarEstudiante(e3);
-    arbol.insertarEstudiante(e4);
-    arbol.insertarEstudiante(e5);
 
-    cout << "\nSe cargaron 5 estudiantes de ejemplo al inicio." << endl;
+    cout << "\nSe cargaron 2 estudiantes de ejemplo al inicio." << endl;
 
     int opcion;
     do {
