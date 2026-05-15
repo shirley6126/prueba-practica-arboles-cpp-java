@@ -1,8 +1,11 @@
 # Estructuras de Datos - Prueba Práctica (Árboles BST)
 
 **Estudiante:** Shirley Amaguaña 
+
 **Semestre:** Tercer Semestre   
+
 **Institución:** Universidad Técnica de Ambato 
+
 **Asignatura:** Estructura de Datos  
 
 ---
