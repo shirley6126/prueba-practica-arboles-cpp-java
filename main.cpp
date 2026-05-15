@@ -402,7 +402,7 @@ int main() {
     ArbolBST arbol;  // creo el árbol vacío
 
     // datos de ejemplo 
-    Estudiante e1 = {"1804500001", "Amaguana Villacres",    "Shirley Dayana", 8.5f, "Sistemas",    "Tercer Semestre"};
+    Estudiante e1 = {"1804500001", "Amaguana Villacres",    "Shirley Dayanaa", 8.5f, "Sistemas",    "Tercer Semestre"};
     Estudiante e2 = {"1804500003", "Garcia Torres",  "Maria Jose",    6.0f, "Industrial",  "Quinto Semestre"};
 
     arbol.insertarEstudiante(e1);
