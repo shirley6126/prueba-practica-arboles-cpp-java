@@ -160,36 +160,105 @@ prueba-practica-arboles-cpp-java/
 
 ## 1. Menú principal del sistema
 
-En esta captura se muestra el menú interactivo y la inserción de estudiantes.
+En esta captura se muestra el menú principal del programa con las opciones disponibles para gestionar estudiantes.
 
 ![Menu Principal](assets/menu.png)
 
 ---
 
-## 2. Recorridos del árbol binario
+## 2. Recorrido Inorden
 
-Se muestran los recorridos:
+El recorrido Inorden muestra los estudiantes ordenados automáticamente por número de cédula.
 
-- Inorden
-- Preorden
-- Postorden
-- BFS
-
-![Recorridos](assets/recorridos.png)
+![Inorden](assets/inorden.png)
 
 ---
 
-## 3. Operaciones del sistema
+## 3. Recorrido Preorden
 
-Ejemplo de:
+El recorrido Preorden visita primero la raíz y luego sus hijos.
 
-- búsqueda
-- eliminación
-- aprobados y reprobados
-- cálculo de altura
-- conteo de nodos
+![Preorden](assets/preorden.png)
 
-![Operaciones](assets/operaciones.png)
+---
+
+## 4. Recorrido Postorden
+
+El recorrido Postorden visita primero los hijos y finalmente la raíz.
+
+![Postorden](assets/postorden.png)
+
+---
+
+## 5. Recorrido BFS por niveles
+
+El recorrido BFS utiliza una cola FIFO para recorrer el árbol nivel por nivel.
+
+![BFS](assets/bfs.png)
+
+---
+
+## 6. Buscar estudiante
+
+Ejemplo de búsqueda de un estudiante mediante su número de cédula.
+
+![Buscar Estudiante](assets/buscarestudiante.png)
+
+---
+
+## 7. Eliminar estudiante
+
+Demostración de eliminación de un nodo dentro del árbol binario.
+
+![Eliminar Estudiante](assets/eliminarestudiante.png)
+
+---
+
+## 8. Contar estudiantes
+
+El sistema calcula automáticamente la cantidad total de nodos registrados en el árbol.
+
+![Contar Estudiantes](assets/Contarestudiante.png)
+
+---
+
+## 9. Calcular altura del árbol
+
+Se muestra el cálculo de la altura máxima alcanzada por el árbol binario.
+
+![Altura Arbol](assets/alturaarbol.png)
+
+---
+
+## 10. Estudiante con nota más alta
+
+El sistema identifica automáticamente al estudiante con la nota mayor.
+
+![Nota Alta](assets/notaAlta.png)
+
+---
+
+## 11. Estudiante con nota más baja
+
+El sistema identifica automáticamente al estudiante con la nota menor.
+
+![Nota Baja](assets/notabaja.png)
+
+---
+
+## 12. Mostrar estudiantes aprobados
+
+Listado de estudiantes con nota mayor o igual a 7.
+
+![Aprobados](assets/aprobados.png)
+
+---
+
+## 13. Mostrar estudiantes reprobados
+
+Listado de estudiantes con nota menor a 7.
+
+![Reprobados](assets/reprobados.png)
 
 ---
 
