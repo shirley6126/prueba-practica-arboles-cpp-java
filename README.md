@@ -1,9 +1,13 @@
 # Prueba Práctica - Árbol Binario de Búsqueda en C++
 
 **Estudiante:** Shirley Amaguaña
+
 **Semestre:** Tercer Semestre  
+
 **Universidad:** Universidad Técnica de Ambato (UTA)  
+
 **Carrera:** Ingeniería de Software  
+
 **Asignatura:** Estructura de Datos  
 
 ---
@@ -59,7 +63,7 @@ mostrarReprobados()
 
 ---
 
-# 🔍 Recorridos Implementados
+# Recorridos Implementados
 
 ## Preorden
 ```txt
@@ -150,8 +154,6 @@ prueba-practica-arboles-cpp-java/
 │   ├── menu.png
 │   ├── recorridos.png
 │   └── operaciones.png
-│
-└── .gitignore
 ```
 
 ---
